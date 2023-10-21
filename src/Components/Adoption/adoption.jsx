@@ -14,7 +14,7 @@ class AdoptionPage extends React.PureComponent {
 
     getRequest = () => {
         this.setState({ isLoading: true });
-        axios.get("https://20t8y8ccj8.execute-api.us-east-2.amazonaws.com/Stage1/petadoptionservice")
+        axios.get("https://20t8y8ccj8.execute-api.us-east-2.amazonaws.com/Stage1/api/adoptions")
             .then(response => {
                 this.setState({
                     data: response.data,
